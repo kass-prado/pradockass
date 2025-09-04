@@ -12,7 +12,7 @@
 	<artifactId>Asistencia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Asistencia</name>
-	<description>Con honor hasta el final</description>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -47,6 +47,7 @@
 			<artifactId>javafx-controls</artifactId>
 			<version>21</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-fxml -->
 		<dependency>
 			<groupId>org.openjfx</groupId>
@@ -59,7 +60,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -86,7 +86,7 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
-					<mainClass>pe.edu.upeu.asistencia.AsistenciaApplication</mainClass>
+					<mainClass>pe.edu.upeu.asistencia.Aplication</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
