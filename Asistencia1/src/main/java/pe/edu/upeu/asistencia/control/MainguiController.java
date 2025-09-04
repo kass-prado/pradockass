@@ -20,7 +20,7 @@ import java.util.Map;
 public class MainguiController {
 
     @FXML
-    private MenuItem menuItem1,menuItem2;
+    private MenuItem menuItem1,menuItem2,menuItem3,menuItem4;
     @FXML
     private MenuBar menuBar;
     @FXML
@@ -32,8 +32,16 @@ public class MainguiController {
     @FXML
     public void initialize(){
         MEnuIemListener miL=new MEnuIemListener();
+
         menuItem1.setOnAction(miL::handle);
         menuItem2.setOnAction(miL::handle);
+        menuItem3.setOnAction(miL::handle);
+        menuItem4.setOnAction(miL::handle);
+
+
+
+
+
     }
 
 
@@ -41,7 +49,10 @@ public class MainguiController {
 
          Map<String, String[]> menuConfig = Map.of(
                  "menuItem1", new String[]{"/fxml/main_participante.fxml", "Participante", "T"},
-                 "menuItem2", new String[]{"/fxml/login.fxml", "salir", "C"}
+
+                 "menuItem2", new String[]{"/fxml/login.fxml", "salir", "C"},
+                 "menuItem3", new String[]{"/fxml/login.fxml", "main_asistencia.fxml", "Asistencia"}
+
 
          );
 
